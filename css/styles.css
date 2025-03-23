@@ -1,0 +1,74 @@
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff8f0;
+}
+
+
+.container {
+    text-align: center;
+    background-color: #fef6e4;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    color: #c0392b;
+    margin-bottom: 20px;
+}
+
+/* Pizza Form*/
+form {
+    background-color: #fcebd4;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+#pizzaOutput {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    width: 400px;
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+/* Pizza Order Button*/
+button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a93226;
+}
+
+/* Dynamic Student Info*/
+#studentInfo {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizza Order Form</title>
+        <!-- Links -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/scripts.js" defer></script>
+    </head>
+
+    <!-- Body -->
+    <body>
+
+
+        <div class="container">
+            <h1>Order Your Pizza!</h1>
+
+            <!-- Pizza Form -->
+            <form id="pizzaForm">
+
+                <!-- Pizza Size -->
+                <label for="size">Pizza Size:</label>
+                <select id="size" name="size" required>
+                    <option value="">--Select Size--</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select><br><br>
+    
+                <!-- Pizza Size -->
+                <label>Choose Crust:</label><br>
+                <input type="radio" name="crust" value="Thin" required> Thin Crust<br>
+                <input type="radio" name="crust" value="Thick"> Thick Crust<br>
+                <input type="radio" name="crust" value="Cheese Burst"> Cheese Burst<br><br>
+    
+                <!-- Pizza Cheese -->
+                <label for="cheese">Cheese Type:</label>
+                <select id="cheese" name="cheese" required>
+                    <option value="">--Select Cheese--</option>
+                    <option value="Mozzarella">Mozzarella</option>
+                    <option value="Cheddar">Cheddar</option>
+                    <option value="Parmesan">Parmesan</option>
+                </select><br><br>
+    
+                <!-- Pizza Topings -->
+                <label>Toppings (choose all that apply):</label><br>
+                <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+                <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms<br>
+                <input type="checkbox" name="toppings" value="Onions"> Onions<br>
+                <input type="checkbox" name="toppings" value="Green Peppers"> Green Peppers<br>
+                <input type="checkbox" name="toppings" value="Bacon"> Bacon<br><br>
+    
+                <!-- Pizza Sauce -->
+                <label for="sauce">Sauce Type:</label>
+                <select id="sauce" name="sauce" required>
+                    <option value="">--Select Sauce--</option>
+                    <option value="Tomato">Tomato</option>
+                    <option value="Pesto">Pesto</option>
+                    <option value="Garlic Parmesan">Garlic Parmesan</option>
+                </select><br><br>
+    
+                <!-- Number of Pizzas-->
+                <label for="quantity">Number of Pizzas:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+    
+                <!-- Pizza Special Instructions-->
+                <label for="instructions">Special Instructions:</label><br>
+                <textarea id="instructions" name="instructions" rows="3" placeholder="Anything specific?"></textarea><br><br>
+    
+                <!-- Pizza Submit Button-->
+                <button type="submit">Order Pizza</button>
+                <button type="button" id="showStudentInfo">Show Student Info</button>
+            </form>
+    
+            <div id="pizzaOutput"></div>
+            <p id="studentInfo"></p>
+        </div>
+    </body>
+    </html>
